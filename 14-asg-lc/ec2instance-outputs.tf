@@ -1,0 +1,6 @@
+# AWS EC2 Instance Terraform Outputs
+# Public EC2 Instances - Bastion Host
+output "ec2_bastion_public_ip" {
+  description = "List of Public ip address assigned to the instances"
+  value       = module.ec2_public.public_ip
+}
